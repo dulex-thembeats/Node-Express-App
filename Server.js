@@ -42,6 +42,13 @@ app.get('/', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'My projects'
+	});
+});
+
+
 app.get('/home', (req,res) => {
 	res.send('welcome, home');
 }); 
@@ -51,6 +58,7 @@ app.get('/about', (req, res) => {
 		pageTitle: 'About page'
 	});
 });
+
 
 //To return a JSON we do
 
